@@ -1,0 +1,302 @@
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #86f9e2;
+  color: white;
+  padding: 10px 0; /* Увеличен отступ для большей высоты */
+  text-align: center;
+  font-size: 1.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* Увеличен отступ снизу */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #e9ecef;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: rgb(145, 235, 221);
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #62affd;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #6c757d;
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Form styles */
+form {
+  max-width: 480px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #0c0c0c;
+}
+
+form input, form button, form select {
+  width: 100%; /* Используем 100% ширины для элементов формы */
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  margin-bottom: 10px; /* Отступ снизу для элементов формы */
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styles for h1 and h2 */
+h1, h2 {
+  text-align: center;
+  color: #343a40;
+  margin: 20px 0;
+}
+
+/* List styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+ul li h3 {
+  margin: 0 0 10px;
+  font-size: 1.25em;
+}
+
+ul li p {
+  margin: 5px 0;
+}
+
+/* Menu container styles */
+.menu-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Carousel styles */
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.carousel .control-arrow:hover, .carousel.carousel-slider .control-arrow:hover {
+  opacity: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Calendar container styles */
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 500px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Calendar custom styles */
+.react-calendar {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.tile-content {
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.tile-content:hover {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Custom select styles */
+.custom-form-control {
+  margin: 16px 0;
+  width: 100%;
+}
+
+.custom-select {
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-select .MuiSelect-select {
+  padding: 10px 14px;
+}
+
+.custom-select .MuiSelect-icon {
+  color: #007bff;
+}
+
+.custom-menu-item {
+  padding: 10px 14px;
+}
+
+.custom-menu-item.Mui-disabled {
+  background-color: #f0f0f0;
+  color: #999;
+}
+
+.custom-menu-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Navigation styles */
+.nav-container {
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 10px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav ul li a:hover {
+  background-color: #f0f0f0;
+}
+
+.nav ul li a svg {
+  margin-right: 8px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+  }
+}
