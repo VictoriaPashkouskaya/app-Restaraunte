@@ -1,3 +1,148 @@
+/* src/App.css */
+
+/* Основные стили для страницы */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Стили для заголовка */
+header {
+  background-color: #ff6347;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* Стили для навигации */
+nav {
+  background-color: #ffa07a;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #ff4500;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #ff6347;
+}
+
+/* Стили для форм */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+form input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #ff4500;
+}
+
+/* Стили для заголовков */
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Стили для списка блюд */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul li h3 {
+  margin: 0 0 10px;
+}
+
+ul li p {
+  margin: 5px 0;
+}
+
+/* Кнопка возврата */
+button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff4500;
+}
 
 @keyframes App-logo-spin {
   from {

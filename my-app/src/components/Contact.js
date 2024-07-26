@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import BackButton from './BackButton';
+
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -8,39 +10,35 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name.length >= 3) {
-      const contactData = { name, email };
-      localStorage.setItem('contactData', JSON.stringify(contactData));
-      navigate('/');
-    } else {
-      alert('Name must be at least 3 characters long');
-    }
+    const contactData = { name, email };
+    
+    navigate('/reserve', { state: { contactData } });
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
         <label>Name:</label>
-        <input 
-          type="text" 
-          value={name} 
-          onChange={(e) => setName(e.target.value)} 
-          required 
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
         />
       </div>
       <div>
         <label>Email:</label>
-        <input 
-          type="email" 
-          value={email} 
-          onChange={(e) => setEmail(e.target.value)} 
-          required 
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
         />
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit">Sign-up</button>
+      <BackButton>Back</BackButton>
     </form>
   );
 };
 
 export default Contact;
-
